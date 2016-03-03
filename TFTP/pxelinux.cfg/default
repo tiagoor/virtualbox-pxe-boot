@@ -1,0 +1,20 @@
+PROMPT 0
+NOESCAPE 0
+ALLOWOPTIONS 0
+TIMEOUT 100
+
+DEFAULT menu.c32
+
+MENU TITLE [ Boot Menu ]
+
+LABEL install
+    menu default
+    menu label ^Install
+    kernel installers/ubuntu/wily/amd64/linux
+    append vga=normal initrd=installers/ubuntu/wily/amd64/initrd.gz
+
+# example here uses raw file from github
+LABEL install
+    menu label ^Kickstart Install
+    kernel installers/ubuntu/wily/amd64/linux
+    append vga=normal initrd=installers/ubuntu/wily/amd64/initrd.gz ks=http://pastebin.com/raw/7BPDWJuX
