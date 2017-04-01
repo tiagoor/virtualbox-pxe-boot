@@ -1,3 +1,5 @@
+# Blogvi.openstack.eti.br tor@openstack.eti.br
+#
 # VirtualBox + PXE Boot + Kickstart example
 
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads) support PXE (network booting) out of the box with minimal configuration and no extra software or servers.
